@@ -9,6 +9,8 @@ from pprint import pprint
 def calculate_values_required():
     pass
 
+# Replace the <filename> with the image file
+
 def img_to_raw(img):
     im = Image.open(img)
     px = im.load()
@@ -19,6 +21,7 @@ def img_to_raw(img):
     horizontal_high = 900
     width, height = im.size
     vertical_pixel_increment = (vertical_high - vertical_low) / height
+    print(vertical_pixel_increment)
     horizontal_pixel_increment = (horizontal_high - horizontal_low) / width
     base_h = horizontal_low
     cperrow = 4
@@ -42,5 +45,5 @@ def push_to_values():
     pass
 
 if __name__ == "__main__":
-    pxls = img_to_raw("/home/daksh/Projects/iDataAnalyse/leave3-300x224.jpg")
+    pxls = img_to_raw(<filename>)
     pprint(pxls)
