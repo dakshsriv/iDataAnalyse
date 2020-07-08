@@ -22,13 +22,12 @@ def img_to_raw(img):
     horizontal_pixel_increment = (horizontal_high - horizontal_low) / width
     base_h = horizontal_low
     cperrow = 4
-    for a in range(1, width+1):
+    for a in range(1, width):
         found = list()
         base = vertical_low
         lst = list()
         for x in range(0, cperrow):
             for b in range(1, height+1):
-                print(px[a,b] in found)
                 if px[a, b] not in found:
                     found.append(px[a,b])
                     lst.append(base)
