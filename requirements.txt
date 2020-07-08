@@ -1,0 +1,2 @@
+Pillow==7.2.0
+jsonlib-python3==1.6.1
