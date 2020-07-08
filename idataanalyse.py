@@ -31,7 +31,7 @@ def img_to_raw(img):
         lst = list()
         for x in range(0, cperrow):
             for b in range(1, height+1):
-                if px[a, b] not in found:
+                if px[a, b] not in found and px[a, b] != (0,0,0):
                     found.append(px[a,b])
                     lst.append(base)
                     break
